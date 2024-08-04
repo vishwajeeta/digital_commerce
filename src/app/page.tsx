@@ -14,7 +14,7 @@ export default function Home() {
         Your Market place for <span className='text-blue-600'> digital </span> Products/Assets.</h1>
         <p className='mt-6 text-lg max-w-prose text-muted-foreground'>Welcome to DigitalMarket. Every asset on our platform is unverified by our team to ensure Their freedom and standards</p>
         <div className='flex flex-col sm:flex-row gap-4 mt-6'>
-          <Link href='/products'>Browse Trending</Link>
+          <Link href='/products' className={''}>Browse Trending</Link>
         </div>
     </div>
 
