@@ -42,3 +42,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### react icons
 ### TypeScript | .tsx
 ### Contract management system open source (git)
+### payment integration 
