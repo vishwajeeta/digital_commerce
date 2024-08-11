@@ -1,21 +1,24 @@
 "use client";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { Ghost } from "lucide-react";
+import { ArrowDownToLine, CheckCircle, Ghost, Leaf } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const perks=[
   {
     name:'Instant Delivery',
+    Icon:ArrowDownToLine,
     description:'Get your assets delivered to your email in seconds and download them right away.',
   },
   {
     name:'Guaranteed Quality',
+    Icon:CheckCircle,
     description:'Every asset on our platform is verified by our team to ensure our hightest quality standard.',
   },
   {
     name:'save environment',
+    Icon:Leaf,
     description:'we promote digital products and save trees.',
   },
 ]
@@ -49,8 +52,8 @@ export default function Home() {
             {perks.map((perk)=>(
               <div key={perk.name} className="text-center md:flex md:items-start md:text-left lg:block lg:text-center">
                 <div className="md:flex-shrink-0 flex justify-center">
-                  <div className="h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900">
-
+                  <div className="h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900">
+                    {<perk.Icon className="w-1/3 h-1/3"/>}
                   </div>
                 </div>
                 <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">

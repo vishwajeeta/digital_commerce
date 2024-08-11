@@ -5,3 +5,7 @@
 ### install ui components
 
 >npx shadcn-ui@latest add button
+
+>npm install lucide-react
+
+>npx shadcn-ui@latest add sheet
